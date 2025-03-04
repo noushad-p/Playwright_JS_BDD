@@ -1,19 +1,29 @@
 {
-  "name": "udemy_ko_playwright_js_bdd_cucumber",
+  "name": "playwright_js_bdd_cucumber",
   "version": "1.0.0",
-  "description": "",
+  "description": "Automation Testing | Web | Playwright | Javascript | VS Code | BDD | Cucumber | Page Object Model | Chai | Cucumber-HTML-Reporter | Features | Step Definitions | Scenario Outline | Examples",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
+    "test": "cucumber-js --require-module @babel/register --require cucumber.js --require step-definitions/**/*.js -f json:test-results/cucumber_report.json",
     "report": "node reporter.js"
   },
-  "author": "Rajat Verma",
+  "author": "Noushad Pathan",
   "license": "ISC",
   "dependencies": {
-    "@cucumber/cucumber": "^8.1.2",
+    "@cucumber/cucumber": "^11.2.0",
     "chai": "^4.3.6",
-    "cucumber-html-reporter": "^5.5.0",
-    "playwright": "^1.21.1",
+    "playwright": "^1.50.1",
     "prettier": "^2.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/register": "^7.25.9",
+    "cucumber-html-reporter": "^7.2.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }

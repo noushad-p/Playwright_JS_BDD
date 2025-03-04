@@ -1,17 +1,4 @@
-# /**************************************************/
-
-# /**  
-# * @author Rajat Verma
-# * https://www.linkedin.com/in/rajat-v-3b0685128/
-# * https://github.com/rajatt95
-# * https://rajatt95.github.io/ 
-# *  
-# * Course: Automated Software Testing with Playwright (https://www.udemy.com/course/automated-software-testing-with-playwright/)
-# * Tutor: Kaniel Outis (https://www.udemy.com/user/shinoku911/)
-# */
-
-# /**************************************************/
-
+@hdfcTest
 Feature: Login action
 
     As a user
@@ -30,6 +17,6 @@ Feature: Login action
 
       Examples:
           | username | password |
-          | fail-1  | fail-1  |
-          | fail-2  | fail-2  |
-          | fail-3  | fail-3  |
+          | fail-1   | fail-1  |
+          | fail-2   | fail-2  |
+          | fail-3   | fail-3  |
